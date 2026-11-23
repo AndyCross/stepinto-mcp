@@ -35,7 +35,7 @@ var (
 )
 
 var (
-	binary string // the server, built once
+	binary  string // the server, built once
 	siteURL string // a copy of the site served from testdata/site
 )
 
