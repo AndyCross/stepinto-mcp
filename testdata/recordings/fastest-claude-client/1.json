@@ -1,0 +1,14 @@
+{
+  "synthetic": false,
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "request-id": "req_011ChLUM3RCV8mm3PZTZdMMp"
+  },
+  "chunks": [
+    {
+      "delay_ms": 1240,
+      "data": "{\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011ChLUM3URLEGFNDjqg5NwG\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"tool_use\",\"id\":\"toolu_017TwGGrgCy7RkbxWCm99vkJ\",\"name\":\"search_posts\",\"input\":{\"query\":\"calling Claude fast\",\"limit\":10},\"caller\":{\"type\":\"direct\"}},{\"type\":\"tool_use\",\"id\":\"toolu_01QhSup6XgffcniysjNni8H5\",\"name\":\"list_lanes\",\"input\":{},\"caller\":{\"type\":\"direct\"}}],\"container\":null,\"stop_reason\":\"tool_use\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":1001,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":101,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\",\"speed\":\"standard\"},\"diagnostics\":null}"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "isError": true,
+  "text": "validating \"arguments\": validating root: unexpected additional properties [\"max\"]"
+}

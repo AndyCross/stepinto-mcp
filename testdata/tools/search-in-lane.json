@@ -1,0 +1,35 @@
+{
+  "structured": {
+    "posts": [
+      {
+        "date": "2026-10-22",
+        "lane": "hot-path",
+        "summary": "The fastest way from your code to Claude is one POST and one stream, and this is it in bash and curl, no jq. It launches a series: one language a week, one file each, measured for what it adds on top of the API.",
+        "tags": [
+          "ai",
+          "claude",
+          "bash",
+          "curl",
+          "sse",
+          "claude-hot-path"
+        ],
+        "title": "The Hot Path to Claude Is a Shell Script",
+        "url": "/hot-path/the-hot-path-to-claude-is-a-shell-script/"
+      },
+      {
+        "date": "2026-10-29",
+        "lane": "hot-path",
+        "summary": "The second client on the hot path: net/http, encoding/json and a bufio scanner for Server-Sent Events, in a static binary from a scratch image. What the standard library gives you, and the one thing it does not.",
+        "tags": [
+          "ai",
+          "claude",
+          "go",
+          "sse",
+          "claude-hot-path"
+        ],
+        "title": "A Claude Client in One Go File",
+        "url": "/hot-path/a-claude-client-in-one-go-file/"
+      }
+    ]
+  }
+}

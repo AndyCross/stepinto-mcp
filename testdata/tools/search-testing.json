@@ -1,0 +1,48 @@
+{
+  "structured": {
+    "posts": [
+      {
+        "date": "2025-01-03",
+        "lane": "go",
+        "summary": "Testing in Go with the built-in testing package instead of xUnit or NUnit. Table-driven tests, subtests, test helpers and coverage.",
+        "tags": [
+          "go",
+          "dotnet",
+          "testing",
+          "csharp"
+        ],
+        "title": "Testing Without a Framework",
+        "url": "/go/testing-without-a-framework/"
+      },
+      {
+        "date": "2025-01-03",
+        "lane": "go",
+        "summary": "Mocking in Go without Moq or NSubstitute. Hand-written fakes, small interfaces, and generated mocks with mockery and gomock.",
+        "tags": [
+          "go",
+          "dotnet",
+          "testing",
+          "mocking",
+          "csharp"
+        ],
+        "title": "Mocking in a Language Without Mockito",
+        "url": "/go/mocking-in-a-language-without-mockito/"
+      },
+      {
+        "date": "2026-06-17",
+        "lane": "sovereignty",
+        "summary": "Why the UK's sovereign compute fund misreads the frontier. Research talent, not GPUs, is what separates labs that lead from labs that copy.",
+        "tags": [
+          "ai",
+          "uk",
+          "sovereignty",
+          "geopolitics",
+          "research",
+          "talent"
+        ],
+        "title": "Compute Isn't the Constraint",
+        "url": "/sovereignty/compute-isnt-the-constraint/"
+      }
+    ]
+  }
+}

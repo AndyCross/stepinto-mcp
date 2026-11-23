@@ -1,0 +1,14 @@
+{
+  "synthetic": false,
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "request-id": "req_011ChLUPJFE7Hd1jGa6w72Ye"
+  },
+  "chunks": [
+    {
+      "delay_ms": 3015,
+      "data": "{\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011ChLUPJLgBqdv1dv3Gm2eo\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"Yes. The post is [Mocking in a Language Without Mockito](/go/mocking-in-a-language-without-mockito/) (2025-01-03, Go lane). It covers testing Go code without Moq or NSubstitute.\\n\\n**One recommendation:** start with hand-written fakes, and keep your interfaces small. The post says this works best when an interface has one to three methods, when you'll reuse the fake across tests, and when you want no dependencies. A fake for a small interface is only a few lines. For example, a `FakeSaver` with an `Err` field that `Save` returns lets you test error paths. The post suggests moving to testify/mock only if you keep rewriting the same patterns. It suggests generated mocks (mockery or gomock) only for genuinely large interfaces.\\n\\nThe companion post [Testing Without a Framework](/go/testing-without-a-framework/) covers Go's built-in `testing` package. It includes table-driven tests, subtests and helpers.\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":6096,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":317,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\",\"speed\":\"standard\"},\"diagnostics\":null}"
+    }
+  ]
+}

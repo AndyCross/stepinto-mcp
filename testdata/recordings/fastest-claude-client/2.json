@@ -1,0 +1,14 @@
+{
+  "synthetic": false,
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json",
+    "request-id": "req_011ChLUM8VYgmS5HErdPR97q"
+  },
+  "chunks": [
+    {
+      "delay_ms": 1681,
+      "data": "{\"model\":\"claude-sonnet-5-5\",\"id\":\"msg_011ChLUM8ZkNG4vkD961TpXy\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"The hot-path lane has two posts on this topic:\\n\\n- [The Hot Path to Claude Is a Shell Script](/hot-path/the-hot-path-to-claude-is-a-shell-script/) (2026-10-22). This is a bash and curl client with no jq. It uses one POST and one stream.\\n- [A Claude Client in One Go File](/hot-path/a-claude-client-in-one-go-file/) (2026-10-29). This is a Go client built on net/http, encoding/json and a bufio scanner for SSE. It ships as a static binary from a scratch image.\"}],\"container\":null,\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":2318,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":191,\"output_tokens_details\":{\"thinking_tokens\":0},\"service_tier\":\"standard\",\"inference_geo\":\"global\",\"speed\":\"standard\"},\"diagnostics\":null}"
+    }
+  ]
+}

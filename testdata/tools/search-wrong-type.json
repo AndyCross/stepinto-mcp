@@ -1,0 +1,4 @@
+{
+  "isError": true,
+  "text": "validating \"arguments\": validating root: validating /properties/limit: type: three has type \"string\", want \"integer\""
+}

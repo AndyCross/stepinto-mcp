@@ -1,0 +1,223 @@
+[
+  {
+    "name": "get_post",
+    "description": "The whole of one post on stepinto.dev as Markdown, by the url search_posts or recent_posts gave.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "description": "The post's address as search_posts or recent_posts gave it, like /go/some-post/",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "markdown": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "markdown"
+      ],
+      "type": "object"
+    }
+  },
+  {
+    "name": "list_lanes",
+    "description": "The lanes (series) posts on stepinto.dev belong to, with how many posts each has.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "type": "object"
+    },
+    "outputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "lanes": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "posts": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "name",
+              "posts"
+            ],
+            "type": "object"
+          },
+          "type": [
+            "null",
+            "array"
+          ]
+        }
+      },
+      "required": [
+        "lanes"
+      ],
+      "type": "object"
+    }
+  },
+  {
+    "name": "recent_posts",
+    "description": "The newest posts on stepinto.dev, newest first, optionally from one lane.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "lane": {
+          "description": "Only posts in this lane. list_lanes gives the names",
+          "type": "string"
+        },
+        "limit": {
+          "description": "How many posts to return, 1 to 20. Default 5",
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "outputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "posts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "lane": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "tags": {
+                "items": {
+                  "type": "string"
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "url",
+              "date",
+              "lane",
+              "summary",
+              "tags"
+            ],
+            "type": "object"
+          },
+          "type": [
+            "null",
+            "array"
+          ]
+        }
+      },
+      "required": [
+        "posts"
+      ],
+      "type": "object"
+    }
+  },
+  {
+    "name": "search_posts",
+    "description": "Search the posts on stepinto.dev, a blog about Go for C# developers, world models, AI law in the UK and EU, European AI sovereignty and calling Claude fast. Returns the best matches first, each with its title, url, date, lane, summary and tags. Use get_post with a url to read the whole post.",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "lane": {
+          "description": "Only search this lane, e.g. go or world-models. list_lanes gives the names",
+          "type": "string"
+        },
+        "limit": {
+          "description": "How many posts to return, 1 to 20. Default 5",
+          "type": "integer"
+        },
+        "query": {
+          "description": "Words to look for in titles, tags, summaries and post text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "posts": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "lane": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "tags": {
+                "items": {
+                  "type": "string"
+                },
+                "type": [
+                  "null",
+                  "array"
+                ]
+              },
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "url",
+              "date",
+              "lane",
+              "summary",
+              "tags"
+            ],
+            "type": "object"
+          },
+          "type": [
+            "null",
+            "array"
+          ]
+        }
+      },
+      "required": [
+        "posts"
+      ],
+      "type": "object"
+    }
+  }
+]

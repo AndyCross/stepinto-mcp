@@ -1,0 +1,48 @@
+{
+  "structured": {
+    "posts": [
+      {
+        "date": "2026-11-20",
+        "lane": "ai-law",
+        "summary": "The AI Act's transparency article verbatim, with every clause explained: what it means, what the Commission's guidelines and the Code of Practice say, what is contested, and what it changes in the software you ship.",
+        "tags": [
+          "ai",
+          "europe",
+          "regulation",
+          "compliance",
+          "ai-act"
+        ],
+        "title": "Article 50 of the EU AI Act Makes AI Declare Itself",
+        "url": "/ai-law/article-50-of-the-ai-act-annotated-clause-by-clause/"
+      },
+      {
+        "date": "2026-11-09",
+        "lane": "patterns",
+        "summary": "Two English floors six hundred years apart, made the same way. Rosa y Granada is Catherine of Aragon's rose and pomegranate as a medieval inlaid tile, white slip in red clay under lead. Encaustic is the Victorian revival for Pugin's churches and the Palace of Westminster: four clays, no glaze, lions and lettering. Both share one material file with two recipes, and both are cousins of the Barcelona cement tile.",
+        "tags": [
+          "art",
+          "generative",
+          "canvas",
+          "javascript",
+          "open-source"
+        ],
+        "title": "Clay in Clay",
+        "url": "/patterns/clay-in-clay/"
+      },
+      {
+        "date": "2026-10-29",
+        "lane": "hot-path",
+        "summary": "The second client on the hot path: net/http, encoding/json and a bufio scanner for Server-Sent Events, in a static binary from a scratch image. What the standard library gives you, and the one thing it does not.",
+        "tags": [
+          "ai",
+          "claude",
+          "go",
+          "sse",
+          "claude-hot-path"
+        ],
+        "title": "A Claude Client in One Go File",
+        "url": "/hot-path/a-claude-client-in-one-go-file/"
+      }
+    ]
+  }
+}

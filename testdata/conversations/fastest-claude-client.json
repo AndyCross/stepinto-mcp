@@ -1,0 +1,20 @@
+{
+  "text": "The hot-path lane has two posts on this topic:\n\n- [The Hot Path to Claude Is a Shell Script](/hot-path/the-hot-path-to-claude-is-a-shell-script/) (2026-10-22). This is a bash and curl client with no jq. It uses one POST and one stream.\n- [A Claude Client in One Go File](/hot-path/a-claude-client-in-one-go-file/) (2026-10-29). This is a Go client built on net/http, encoding/json and a bufio scanner for SSE. It ships as a static binary from a scratch image.",
+  "calls": [
+    {
+      "name": "search_posts",
+      "input": {
+        "query": "calling Claude fast",
+        "limit": 10
+      },
+      "result": "{\"posts\":[{\"date\":\"2026-10-22\",\"lane\":\"hot-path\",\"summary\":\"The fastest way from your code to Claude is one POST and one stream, and this is it in bash and curl, no jq. It launches a series: one language a week, one file each, measured for what it adds on top of the API.\",\"tags\":[\"ai\",\"claude\",\"bash\",\"curl\",\"sse\",\"claude-hot-path\"],\"title\":\"The Hot Path to Claude Is a Shell Script\",\"url\":\"/hot-path/the-hot-path-to-claude-is-a-shell-script/\"},{\"date\":\"2026-10-29\",\"lane\":\"hot-path\",\"summary\":\"The second client on the hot path: net/http, encoding/json and a bufio scanner for Server-Sent Events, in a static binary from a scratch image. What the standard library gives you, and the one thing it does not.\",\"tags\":[\"ai\",\"claude\",\"go\",\"sse\",\"claude-hot-path\"],\"title\":\"A Claude Client in One Go File\",\"url\":\"/hot-path/a-claude-client-in-one-go-file/\"},{\"date\":\"2024-12-02\",\"lane\":\"specials\",\"summary\":\"An MCP server that lets Claude place and move geographic objects in a 3D scene, with the server doing the maths and the model doing the talking.\",\"tags\":[\"mcp\",\"ai\",\"python\",\"gis\"],\"title\":\"Building 3D Scenes Through Conversation: An MCP Server for Geographic Objects\",\"url\":\"/specials/building-3d-scenes-through-conversation-an-mcp-server-for-geographic-objects/\"},{\"date\":\"2026-07-05\",\"lane\":\"world-models\",\"summary\":\"Interleaved telemetry and commands from IoT and energy devices are already world model training data. What world models are and why sensor data matters.\",\"tags\":[\"ai\",\"world-models\",\"iot\",\"energy\",\"agents\"],\"title\":\"Your Time Series Is Already Training Data\",\"url\":\"/world-models/your-time-series-is-already-training-data/\"},{\"date\":\"2026-06-17\",\"lane\":\"sovereignty\",\"summary\":\"Why the UK's sovereign compute fund misreads the frontier. Research talent, not GPUs, is what separates labs that lead from labs that copy.\",\"tags\":[\"ai\",\"uk\",\"sovereignty\",\"geopolitics\",\"research\",\"talent\"],\"title\":\"Compute Isn't the Constraint\",\"url\":\"/sovereignty/compute-isnt-the-constraint/\"},{\"date\":\"2025-01-04\",\"lane\":\"go\",\"summary\":\"Building HTTP services with Go's net/http instead of ASP.NET Core. Routing, middleware, handlers and JSON without a framework.\",\"tags\":[\"go\",\"dotnet\",\"http\",\"web\",\"csharp\"],\"title\":\"HTTP Services: net/http vs ASP.NET Core\",\"url\":\"/go/http-services-nethttp-vs-aspnet-core/\"},{\"date\":\"2025-01-02\",\"lane\":\"go\",\"summary\":\"Go's any type explained for C# developers. How type assertions and type switches compare to object and casting, and when reaching for any is a mistake.\",\"tags\":[\"go\",\"dotnet\",\"interfaces\",\"any\",\"csharp\"],\"title\":\"The Empty Interface and Type Assertions\",\"url\":\"/go/the-empty-interface-and-type-assertions/\"}]}",
+      "is_error": false
+    },
+    {
+      "name": "list_lanes",
+      "input": {},
+      "result": "{\"lanes\":[{\"name\":\"ai-law\",\"posts\":1},{\"name\":\"go\",\"posts\":4},{\"name\":\"hot-path\",\"posts\":2},{\"name\":\"patterns\",\"posts\":1},{\"name\":\"sovereignty\",\"posts\":1},{\"name\":\"specials\",\"posts\":1},{\"name\":\"world-models\",\"posts\":2}]}",
+      "is_error": false
+    }
+  ]
+}

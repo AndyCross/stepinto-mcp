@@ -1,0 +1,34 @@
+{
+  "structured": {
+    "posts": [
+      {
+        "date": "2026-07-06",
+        "lane": "world-models",
+        "summary": "What a world model is, built in forty lines of TypeScript with no equations. State in, action in, predicted next state out, using a room and a heater.",
+        "tags": [
+          "ai",
+          "world-models",
+          "typescript",
+          "iot",
+          "agents"
+        ],
+        "title": "A World Model in Forty Lines of TypeScript",
+        "url": "/world-models/a-world-model-in-forty-lines-of-typescript/"
+      },
+      {
+        "date": "2026-07-05",
+        "lane": "world-models",
+        "summary": "Interleaved telemetry and commands from IoT and energy devices are already world model training data. What world models are and why sensor data matters.",
+        "tags": [
+          "ai",
+          "world-models",
+          "iot",
+          "energy",
+          "agents"
+        ],
+        "title": "Your Time Series Is Already Training Data",
+        "url": "/world-models/your-time-series-is-already-training-data/"
+      }
+    ]
+  }
+}
